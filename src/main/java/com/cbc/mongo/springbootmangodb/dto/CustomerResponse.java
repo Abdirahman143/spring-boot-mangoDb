@@ -6,10 +6,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-public class CustomerRequest {
+public class CustomerResponse {
+    private String id;
     private String customerId;
     private String Name;
     private String email;
